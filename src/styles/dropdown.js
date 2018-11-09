@@ -57,9 +57,9 @@ export default ({
   dropdownContent: ({
     backgroundColor = white,
     borderRadius = radius,
-    boxShadow = `0 2px 3px ${toRgba(black, .1)}, 0 0 0 1px ${toRgba(black, .1)}`,
+    boxShadow = `0 2px 3px ${toRgba(black, 0.1)}, 0 0 0 1px ${toRgba(black, 0.1)}`,
   }) => ({
-    backgroundColor ,
+    backgroundColor,
     borderRadius,
     boxShadow,
     paddingBottom: '.5rem',
@@ -77,7 +77,7 @@ export default ({
     display: 'block',
     fontSize: '.875rem',
     lineHeight: 1.5,
-    padding: '.375rem 1rem'
+    padding: '.375rem 1rem',
     position: 'relative',
 
     'a.&, button.&': {

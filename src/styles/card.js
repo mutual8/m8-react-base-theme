@@ -10,7 +10,7 @@ export default ({
 }) => ({
   card: ({
     backgroundColor = white,
-    boxShadow = `0 2px 3px ${toRgba(black, .1)}, 0 0 0 1px ${toRgba(black, .1)}`,
+    boxShadow = `0 2px 3px ${toRgba(black, 0.1)}, 0 0 0 1px ${toRgba(black, 0.1)}`,
     color = text,
   }) => ({
     backgroundColor,
@@ -22,8 +22,8 @@ export default ({
 
   cardHeader: ({
     backgroundColor = 'transparent',
-    boxShadow = `0 1px 2px ${toRgba(black, .1)}`,
-  }) =>  ({
+    boxShadow = `0 1px 2px ${toRgba(black, 0.1)}`,
+  }) => ({
     backgroundColor,
     alignItems: 'stretch',
     boxShadow,
@@ -37,7 +37,7 @@ export default ({
   }) => ({
     alignItems: 'center',
     color,
-    display: 'flex'
+    display: 'flex',
     flexGrow: 1,
     fontWeight,
     padding: '.75rem',
@@ -83,7 +83,7 @@ export default ({
     flexGrow: 1,
     flexShrink: 0,
     justifyContent: 'center',
-    padding: '.75rem'
+    padding: '.75rem',
     '&:not(:last-child)': {
       borderRight: borderDivider,
     },
